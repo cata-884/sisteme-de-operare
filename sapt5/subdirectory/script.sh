@@ -12,7 +12,7 @@ while IFS= read -r -d '' file; do
         newline_count=$(tr -dc '\n' < "$file" | wc -c)
         echo "$file $newline_count" >&2
     fi
-done < <(find "$target_dir" -type f -print0)
+done <<(find "$target_dir" -type f -print0)
 
 echo "script-uri bash: $total_bash"
 exit 0
