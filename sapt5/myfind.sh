@@ -8,7 +8,6 @@ elif [ ! -r "$dir" ] || [ ! -x "$dir" ]; then
     exit 2
 else
     echo "este fisier valid"
-    exit 0
 fi
 script_dir=$(dirname "$0")
 second_script="${script_dir}/subdirectory/script.sh"
