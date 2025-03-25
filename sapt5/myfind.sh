@@ -6,8 +6,6 @@ if [ ! -d "$dir" ]; then
 elif [ ! -r "$dir" ] || [ ! -x "$dir" ]; then
     echo "nu este readable/executable"
     exit 2
-else
-    echo "este fisier valid"
 fi
 script_dir=$(dirname "$0")
 second_script="${script_dir}/subdirectory/script.sh"
